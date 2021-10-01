@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_parent"
+    android:paddingLeft="5dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="121sp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="120sp" />
+    <TextView
+        android:id="@+id/eventname"
+        android:layout_toRightOf="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="?attr/colorPrimary"
+        android:text="Event Name"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/venue"
+        android:layout_toRightOf="@+id/image"
+        android:layout_below="@+id/eventname"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Venue"
+        android:gravity="center|left"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/event_time"
+        android:layout_toRightOf="@+id/image"
+        android:layout_below="@+id/venue"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Time"
+        android:gravity="center|left"
+        android:textSize="18sp"/>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:alpha="0.5"
+        android:background="#316887"
+        />
+
+</RelativeLayout>
